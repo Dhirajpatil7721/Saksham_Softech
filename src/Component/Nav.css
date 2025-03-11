@@ -1,0 +1,77 @@
+/* Navbar Styles */
+nav {
+    background-color: #e1e3e7;
+    color: rgb(57, 54, 54);
+    padding: 1rem;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #1f2937;
+    top: 60px;
+    left: 0;
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  nav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #9ca3af;
+  }
+  /* #logo{
+    width: 4%;
+    margin-left: 2rem;
+  } */
+  #navli {
+    color: black;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out, font-size 0.2s ease-in-out, font-weight 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+    
+}
+
+#navli:hover {
+    color: rgb(235, 16, 16);
+    font-weight: 600;
+    text-decoration: overline;
+    font-size: 19px;
+}
+
+
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    nav ul li {
+      padding: 0 15px;
+    }
+  }
+  

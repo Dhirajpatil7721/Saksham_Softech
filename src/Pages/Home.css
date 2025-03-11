@@ -1,0 +1,20 @@
+#welcom{
+    /* font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
