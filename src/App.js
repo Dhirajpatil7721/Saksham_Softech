@@ -23,6 +23,9 @@ import It from './Services/It';
 import Cybersecurity from './Services/Cybersecurity';
 import Cloud from './Services/Cloud';
 import Ecommerce from './Services/Ecommerce';
+import Career from './Pages/Career';
+import ApplyContact from './Pages/ApplyContact';
+import Chatbot from './Component/Chatbot';
 
 function App() {
   return (
@@ -33,9 +36,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/about" element={<About/>} ></Route>
+      <Route path="/carrer" element={<Career/>} ></Route>
       <Route path="/services" element={<Services/>}></Route>
       <Route path="/portfolio" element={<Portfolio/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
+      {/* <Route path="/apply" element={<ApplyContact/>}></Route> */}
   
   {/* Portfolios */}
       <Route path="/hospital" element={<Hospital/>}></Route>
@@ -59,6 +64,7 @@ function App() {
 
 
     </Routes>
+    <Chatbot/>
     <Footer/>
    </Router>
     

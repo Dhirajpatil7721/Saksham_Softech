@@ -6,12 +6,12 @@ import logo from '../Images/logobg.png';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Get current route
+  const location = useLocation(); 
 
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]); // Runs whenever the route changes
+  }, [location.pathname]); 
   const navigate = useNavigate();
 
   const go=()=>{
@@ -31,15 +31,20 @@ const Nav = () => {
           {isOpen ? "✖" : "☰"}
         </button>
 
-        <ul
-          className={`md:flex absolute md:static  w-full md:w-auto flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0 transition-all duration-300 ease-in-out ${
-            isOpen ? "block" : "hidden"
-          }`}
+        <ul 
+          // className={`md:flex absolute md:static  w-full md:w-auto flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0 transition-all duration-300 ease-in-out ${
+          //   isOpen ? "block" : "hidden"
+          // }`}
+
+          className={`md:flex absolute md:static w-full md:w-auto flex-col md:flex-row md:space-x-6 
+            space-y-4 md:space-y-0 p-4 md:p-0 transition-all duration-300 ease-in-out 
+            ${isOpen ? "block bg-white shadow-md" : "hidden"} md:bg-transparent`}
         >
           <li><Link  to="/" id="navli">Home</Link></li>
           <li><Link  to="/about" id="navli">About Us</Link></li>
           <li><Link  to="/services" id="navli">Services</Link></li>
           <li><Link  to="/portfolio" id="navli">Portfolio</Link></li>
+          <li><Link  to="/carrer" id="navli">Carrer</Link></li>
           <li><Link  to="/contact" id="navli">Contact</Link></li>
         </ul>
       </div>
