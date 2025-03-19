@@ -12,10 +12,10 @@ const Chatbot = () => {
   const faq = {
     "Services": "We specialize in IT solutions, software development, and cloud services.",
     "Location": "Sr No. 19/1, Hingne Home Colony, Karve Nagar, Pune-411052",
-    "Contact": "You can reach us at sakshamsoftech@gmail.com",
+    "Contact": "You can reach us at sakshamsoftech@gmail.com or +918010540275",
     "Industries Serve?": "We serve industries like finance, healthcare, and manufacturing.",
     "Cloud Services?": "Yes, we provide cloud computing and hosting solutions.",
-    "Can I request a Demo?": "You can request a demo by contacting us via email or phone."
+    "Can I request a Demo?": "You can request a demo by contacting us via sakshamsoftech@gmail.com or +918010540275."
   };
 
   useEffect(() => {

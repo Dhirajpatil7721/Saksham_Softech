@@ -17,7 +17,10 @@ import Ankita from "../Images/Ankita.jpg";
 import Siddhesh from "../Images/Siddhesh.jpg";
 import Neeleshsir from "../Images/Neeleshsir.jpg";
 import LokeshSir from "../Images/LokeshSir.jpg";
-import Kalyanimam2 from "../Images/Kalyanimam2.jpg";
+import Kalyanimam2 from "../Images/KALYANIMAM.jpg";
+import samruddhi from "../Images/samruddhi.jpg";
+import sunny from "../Images/sunny.jpg";
+import mansi from "../Images/mansi.jpg";
 
 export default function AboutPage() {
   return (
@@ -70,7 +73,7 @@ const Section = ({ title, children, bgClass }) => (
 );
 
 const ProfileGrid = ({ members }) => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     {members.map((member, index) => (
       <ProfileCard key={index} member={member} />
     ))}
@@ -79,7 +82,7 @@ const ProfileGrid = ({ members }) => (
 
 const ProfileCard = ({ member }) => (
   <motion.div
-    className="p-6 bg-white rounded-xl shadow-lg border-2 border-indigo-500 transition-transform hover:scale-105 backdrop-blur-md"
+    className="p-6 bg-gray-200 rounded-xl shadow-lg border-2 border-indigo-500 transition-transform hover:scale-105 backdrop-blur-md"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
@@ -145,15 +148,18 @@ const leadership = [
 ];
 
 const team = [
-  { name: "Sagar Wankhede", role: "Team Lead", img: sagar },
   { name: "Dhiraj Patil", role: "Team Lead", img: dhiraj },
+  { name: "Akanksha Dhekane", role: "Team Lead", img: akanksha },
+  { name: "Sagar Wankhede", role: "Team Lead", img: sagar },
   { name: "Aaditi Dagade", role: "Human Resources", img: Aaditi },
-  { name: "Akanksha Dhekane", role: "Senior Developer", img: akanksha },
   { name: "Swati Mohite", role: "Senior Developer", img: swati },
   { name: "Anjali Kondulkar", role: "Junior Developer", img: anjali },
   { name: "Krushna Chaugule", role: "Junior Developer", img: krushna },
   { name: "Ankita Nalawade", role: "Junior Developer", img: Ankita },
   { name: "Siddhesh Dhokare", role: "Junior Developer", img: Siddhesh },
+  { name: "Samruddhi Jagdale", role: "Junior Developer", img: samruddhi },
+  { name: "Mansi Kannade", role: "Junior Developer", img: mansi },
+  { name: "Sunny kamble ", role: "Junior Developer", img: sunny },
 ];
 
 const stats = [

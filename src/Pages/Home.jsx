@@ -212,7 +212,7 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <div className="text-center md:text-left">
-            <h1 className="text-2xl font-semibold text-purple-900">Software Creation & Maintenance</h1>
+            <h1 className="text-2xl font-semibold text-purple-900">Software Development & Maintenance</h1>
             <p className="text-gray-700 mt-2">
               Ensure the longevity and reliability of your software with our expert maintenance services.
             </p>
